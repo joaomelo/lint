@@ -20,6 +20,6 @@
     }
   },
   "hooks": {
-    "after:bump": ["npm run build", "npm run readme"]
+    "after:bump": ["npm run readme"]
   }
 }
