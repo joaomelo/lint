@@ -1,0 +1,58 @@
+{
+  "name": "@joaomelo/lint",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "opinionated eslint config for plug-and-play in typeScript packages",
+  "keywords": [
+    "lint",
+    "utils",
+    "config",
+    "javascript",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": null,
+      "import": "./src/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaomelo/lint.git"
+  },
+  "author": "joão melo <j@melo.plus> (https://joao.melo.plus)",
+  "scripts": {
+    "lint": "eslint",
+    "test": "node --test ./src/index.test.js",
+    "readme": "readme",
+    "deploy": "npm run lint && npm run test && release-it --ci --verbose"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.9.1",
+    "@stylistic/eslint-plugin": "^2.8.0",
+    "eslint-plugin-no-only-tests": "^3.3.0",
+    "eslint-plugin-perfectionist": "^3.3.0",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.3.0"
+  },
+  "devDependencies": {
+    "@joaomelo/readme": "^0.1.1",
+    "@release-it/conventional-changelog": "^9.0.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.5.0",
+    "eslint": "^9.9.1",
+    "release-it": "^17.0.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.0.11",
+    "vite-plugin-checker": "^0.8.0",
+    "vite-plugin-dts": "^4.2.3",
+    "vitest": "^2.1.3"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "git": {
+    "tagName": "v${version}",
+    "commitMessage": "chore[skip-ci]: release v${version}"
+  },
+  "github": {
+    "release": false
+  },
+  "npm": {
+    "skipChecks": true,
+    "publish": true
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "conventionalcommits",
+      "infile": "CHANGELOG.md",
+      "parserOpts": {
+        "mergePattern": "^merge pull request #(\\d+) from (.*)$"
+      }
+    }
+  },
+  "hooks": {
+    "after:bump": ["npm run build", "npm run readme"]
+  }
+}
