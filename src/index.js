@@ -66,7 +66,8 @@ export function config({ tsconfigPath: userTsconfigPath } = {}) {
         "@stylistic/object-property-newline": ["error", { allowAllPropertiesOnSameLine: true }],
         "@stylistic/operator-linebreak": ["error", "before"],
         "@stylistic/quotes": ["error", "double"],
-        "@stylistic/semi": ["error", "always"]
+        "@stylistic/semi": ["error", "always"],
+        "@stylistic/type-generic-spacing": ["error"]
       }
     },  
     perfectionist.configs["recommended-natural"],
