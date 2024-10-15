@@ -1,7 +1,8 @@
 {
   "git": {
     "tagName": "v${version}",
-    "commitMessage": "chore[skip-ci]: release v${version}"
+    "commitMessage": "chore[skip-ci]: release v${version}",
+    "addUntrackedFiles": true
   },
   "github": {
     "release": false
