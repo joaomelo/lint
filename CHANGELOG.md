@@ -1,5 +1,7 @@
 
 
+## [0.2.1](https://github.com/joaomelo/lint/compare/v0.2.0...v0.2.1) (2024-10-15)
+
 ## [0.2.0](https://github.com/joaomelo/lint/compare/v0.1.0...v0.2.0) (2024-10-15)
 
 ### Features
