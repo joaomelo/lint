@@ -1,0 +1,4 @@
+.github
+.vscode
+.release-it.json
+eslint.config.json
